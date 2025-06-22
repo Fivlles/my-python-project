@@ -1,13 +1,35 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <title>Αρχική Σελίδα</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Καλωσήρθες στο Flask Project!</h1>
-    <p>Αυτή είναι μια απλή σελίδα με Flask.</p>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="/">Αρχική</a></li>
+                <li><a href="#">Σχετικά</a></li>
+                <li><a href="#">Υπηρεσίες</a></li>
+                <li><a href="#">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Καλωσήρθες στο Flask Project!</h1>
+        <p>Αυτή είναι μια απλή σελίδα με Flask.</p>
+
+        <div class="button-group">
+            <button onclick="alert('Πάτησες το κουμπί 1')">Κουμπί 1</button>
+            <button onclick="alert('Πάτησες το κουμπί 2')">Κουμπί 2</button>
+            <button onclick="alert('Πάτησες το κουμπί 3')">Κουμπί 3</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Το Project μου με Flask</p>
+    </footer>
 </body>
 </html>
